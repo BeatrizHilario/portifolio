@@ -146,31 +146,29 @@ body {
 .contato-email { color: white; font-size: 32px; font-weight: 700; text-decoration: none; transition: color 0.3s; }
 .contato-email:hover { color: var(--vermelho); }
 
+/*CONFIGURAÇÕES PARA MOBILE */
 @media (max-width: 1024px) {
     .hero { flex-direction: column; text-align: center; padding-top: 150px; gap: 60px; }
     .hero-content { display: flex; flex-direction: column; align-items: center; }
     .titulo-gigante { font-size: 70px; }
     .contato-title { font-size: 50px; }
     .nav-links { display: none; }
-    
-    /* Desativa a animação do rosto em telas menores */
     .avatar-animacao { display: none !important; }
-
-    /* Fix email scaling on larger tablets */
     .contato-email { font-size: 24px; }
 }
 
 @media (max-width: 768px) {
-    /* --- AVATAR FIX FOR MOBILE --- */
+
+    /*TAMANHO DO AVATAR*/
     .hero-avatar {
-        width: 280px; /* Safe fixed size for mobile */
+        width: 280px;
         height: 280px;
         margin: 0 auto;
         position: relative;
     }
 
     .avatar-container {
-        width: 180px; /* Scaled avatar inside */
+        width: 180px; 
         position: absolute;
         top: 50%;
         left: 50%;
@@ -178,7 +176,6 @@ body {
         z-index: 5;
     }
 
-    /* Shrink floating icons for mobile */
     .floating-icon {
         width: 40px;
         height: 40px;
@@ -186,38 +183,30 @@ body {
         z-index: 10;
     }
 
-    /* Tight position for the smaller mobile avatar, within the 280x280 container */
     .icon-java { top: 5%; left: 5%; }
     .icon-figma { top: 5%; right: 5%; }
-    
-    /* Use positive top/bottom, left/right values only for safety. */
     .icon-html { bottom: 5%; left: 5%; }
     .icon-css { bottom: 5%; right: 5%; }
 
-    /* Shrink halos to match smaller avatar */
     .halo-1 { width: 150px; height: 150px; }
     .halo-2 { width: 200px; height: 200px; }
     .halo-3 { width: 250px; height: 250px; }
 
-    /* --- CONTACT FIX FOR MOBILE --- */
-    /* Adjust text size and padding for better word distribution without break-all */
+    /* --- CONTATO PARA MOBILE --- */
     .contato-box {
-        padding: 40px; /* Reduced padding for more space for content */
+        padding: 40px; 
     }
 
-    /* 1. Prevent isolations in "oportunidade" */
     .contato-title { 
-        font-size: 26px; /* Reduced further to keep "oportunidade" on one line */
-        overflow-wrap: break-word; /* Wrap full words if needed */
-        word-break: keep-all; /* Explicitly prevent character-level breaks for words */
+        font-size: 26px; 
+        overflow-wrap: break-word; 
+        word-break: keep-all;
     }
 
-    /* 2. Prevent isolations in e-mail address */
     .contato-email { 
-        font-size: 16px; /* Reduced from 18px to fit long email without breaking characters */
-        word-break: break-word; /* Safe, whole-word breaking for email */
+        font-size: 16px; 
+        word-break: break-word;
     }
 
-    /* minor fixes for text distribution */
     .hero-desc { font-size: 16px; margin-bottom: 30px; }
 }
