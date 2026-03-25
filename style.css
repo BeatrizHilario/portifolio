@@ -45,8 +45,7 @@ body {
     position: fixed; width: 100%; top: 0; z-index: 1000;
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-.logo-b { font-family: 'Bungee', cursive; font-size: 30px; color: var(--texto-cinza-claro); }
-.logo-eatriz { font-family: 'Candal', sans-serif; font-size: 30px; color: var(--texto-cinza-claro); }
+.logo-beatriz { font-family: 'Candal', sans-serif; font-size: 30px; color: var(--texto-cinza-claro); }
 .logo-hilario { font-family: 'Candal', sans-serif; font-size: 30px; color: var(--vermelho); }
 
 .nav-links { display: flex; align-items: center; gap: 40px; }
