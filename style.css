@@ -108,8 +108,8 @@ body {
 .card:hover .img-capa-projeto { transform: scale(1.1); }
 
 .card-body { padding: 25px; display: flex; flex-direction: column; flex-grow: 1; }
-.tags { display: flex; gap: 10px; margin-bottom: 15px; }
-.tag { padding: 5px 10px; border-radius: 8px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 700; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 15px; }
+.tag { padding: 3px 8px; border-radius: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; white-space: nowrap; }
 .tag-red { background: rgba(84, 0, 0, 0.3); color: var(--vermelho); border: 1px solid rgba(186, 0, 0, 0.5); }
 .tag-gray { background: #3C3C3C; color: #C5C5C5; }
 .tag-gray-dark { background: #3C3C3C; color: #BCBCBC; }
